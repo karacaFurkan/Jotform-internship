@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attack Controller</title>
+</head>
+<body>
+    <form method="POST" action="http://127.0.0.1:4000">
+        <label for="victim">Target URL:</label>
+        <input type="text" id="victim" name="victim" required>
+        <label for="amount">Request Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="check">Is POST?</label>
+        <input type= "checkbox" id="check" name="post">
+        <label for="postval">POST Text:</label>
+        <input type="text" id="postval" name="postv" >
+        <input type="hidden" name="start" value="1">
+        <button type="submit">Start Attack</button>
+    </form>
+    <form method="POST" action="http://127.0.0.1:4000">
+        <input type="hidden" name="stop" value="1">
+        <button type="submit">Stop Attack</button>
+    </form>
+</body>
+</html>
